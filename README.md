@@ -180,7 +180,7 @@ con.executemany(insert_query, [(record["Index"], record["User_Id"], record["Firs
 
 # Convert DuckDB table to DataFrame and write to Delta table
 duck_df = con.execute("SELECT * FROM users").fetchdf()
-delta_table_path = ".../test_delta_table/"
+delta_table_path = ".../test_delta_table/" # modify this to your desired directory
 write_deltalake(delta_table_path, duck_df, mode='append')
 
 # Verify Delta table directory contents and check metadata
