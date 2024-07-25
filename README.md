@@ -209,7 +209,7 @@ print(delta_table.history())
 ### Step 4: Register the Delta Table
 Now that the Delta table is created, register it with Unity Catalog:
 ```bash
-docker exec -it unitycatalog uc table create --full_name my_local_catalog.my_schema.sample_delta_table --columns "Index INT, User_Id STRING, First_Name STRING, Last_Name STRING, Sex STRING, Email STRING, Phone STRING, Date_of_birth DATE, Job_Title STRING" --format DELTA --storage_location file:///C:/Users/CTCREXCNGP/root/test_delta_table
+docker exec -it unitycatalog uc table create --full_name my_local_catalog.my_schema.sample_delta_table --columns "Index INT, User_Id STRING, First_Name STRING, Last_Name STRING, Sex STRING, Email STRING, Phone STRING, Date_of_birth DATE, Job_Title STRING" --format DELTA --storage_location file:///C:/Users/NGP/root/test_delta_table
 ```
 
 ### Step 5: Read the Table *(Delta Format Only)*
