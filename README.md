@@ -108,7 +108,7 @@ Check the logs to verify the container is running:
 ```bash
 docker logs unitycatalog
 ```
-You should see the Unity Catalog logo and other startup messages.
+*You should see the Unity Catalog logo and other startup messages.*
 
 ```
 ###################################################################
